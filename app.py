@@ -5,7 +5,8 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
 # Load a pre-trained Hugging Face model
-chatbot = pipeline("text-generation", model="deepseek-ai/DeepSeek-R1", trust_remote_code=True)
+chatbot = pipeline("text-generation", model="distilgpt2")
+
 
 # Healthcare-specific response logic 
 def healthcare_chatbot(user_input):
